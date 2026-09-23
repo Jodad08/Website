@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Josiah Jardine</title>
+<meta name="description" content="Josiah Jardine builds Hermie, automates the boring parts of software, and runs NixOS. Bay Area, California.">
+<link rel="canonical" href="https://josiahjardine.com/">
+<meta name="theme-color" content="#f4f5f6" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0d0e10" media="(prefers-color-scheme: dark)">
+<meta name="color-scheme" content="light dark">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://josiahjardine.com/">
+<meta property="og:title" content="Josiah Jardine">
+<meta property="og:description" content="Building things, loving life. Hermie, side projects, writing, and photos.">
+<meta property="og:image" content="https://josiahjardine.com/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@josiahjardine">
+<meta name="twitter:image" content="https://josiahjardine.com/og.png">
+<link rel="icon" href="/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preload" href="/fonts/geist.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/geist-pixel.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/styles.css">
+<script>(function(){var d=document.documentElement;d.classList.add('js');try{var t=localStorage.getItem('theme');if(t==='light'||t==='dark')d.setAttribute('data-theme',t)}catch(e){}})();</script>
+<script src="/main.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="/" aria-label="Josiah Jardine, home">
+      <span class="brand-mark" aria-hidden="true">JJ</span>
+      <span class="brand-name">Josiah Jardine</span>
+    </a>
+    <nav aria-label="Primary">
+      <ul class="nav-links">
+        <li><a href="#work">Work</a></li>
+        <li><a href="#writing">Writing</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="theme-toggle" type="button" aria-label="Toggle dark mode">
+      <svg class="i i-sun" aria-hidden="true"><use href="/icons.svg#sun"/></svg>
+      <svg class="i i-moon" aria-hidden="true"><use href="/icons.svg#moon"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero wrap" aria-labelledby="hero-title">
+    <div class="hero-copy">
+      <h1 id="hero-title" class="enter">Building things, loving life<span class="dot">.</span></h1>
+      <p class="lede enter">I'm Josiah. I build Hermie, automate the boring parts of software, and run NixOS btw.</p>
+      <div class="ctas enter">
+        <a class="btn btn-primary" href="https://cal.com/josiahjardine/15min" target="_blank" rel="noopener">
+          <svg class="i" aria-hidden="true"><use href="/icons.svg#calendar-blank"/></svg>Book a call
+        </a>
+        <a class="btn btn-quiet" href="#work">See my work</a>
+      </div>
+    </div>
+    <figure class="hero-media enter">
+      <img
+        src="https://framerusercontent.com/images/LJHKETUQYsVhrA7YO5cSZLrSLM.jpeg?scale-down-to=1024"
+        srcset="https://framerusercontent.com/images/LJHKETUQYsVhrA7YO5cSZLrSLM.jpeg?scale-down-to=512 512w,
+                https://framerusercontent.com/images/LJHKETUQYsVhrA7YO5cSZLrSLM.jpeg?scale-down-to=1024 1024w,
+                https://framerusercontent.com/images/LJHKETUQYsVhrA7YO5cSZLrSLM.jpeg 2160w"
+        sizes="(min-width: 900px) 46vw, 100vw"
+        width="2160" height="1440" alt="Cover photo from Josiah's site" fetchpriority="high">
+    </figure>
+  </section>
+
+  <section class="now wrap reveal" aria-labelledby="now-title">
+    <h2 id="now-title">Right now, I'm</h2>
+    <dl class="now-list">
+      <div><dt>building</dt><dd><a href="https://hermie.net" target="_blank" rel="noopener">Hermie</a>, dental insurance verification that finishes before the front desk opens.</dd></div>
+      <div><dt>running</dt><dd>NixOS on everything I own. I don't really need it, but it taught me how computers work.</dd></div>
+      <div><dt>mixing</dt><dd>Audio for my school's theater and for my church.</dd></div>
+      <div><dt>selling</dt><dd>Websites to small businesses through <a href="https://marketingmeteor.com" target="_blank" rel="noopener">Marketing Meteor</a>.</dd></div>
+      <div><dt>reading</dt><dd>Whatever is next on my <a href="https://old.josiahjardine.com/reading-list" target="_blank" rel="noopener">reading list</a>.</dd></div>
+    </dl>
+  </section>
+
+  <section id="hermie" class="feature wrap reveal" aria-labelledby="hermie-title">
+    <a class="feature-media" href="https://hermie.net" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+      <img src="/img/hermie.webp" width="1600" height="1000" loading="lazy" decoding="async" alt="">
+    </a>
+    <div class="feature-copy">
+      <h2 id="hermie-title">Hermie</h2>
+      <p>Dental offices lose hours every morning on insurance hold music. Hermie verifies every scheduled patient overnight and writes the full benefits breakdown into the chart before anyone walks in.</p>
+      <dl class="facts">
+        <div><dt>How</dt><dd>Clearinghouse check first, payer website second, an AI voice agent calls the payer last. Each step only fills what the one before it missed.</dd></div>
+        <div><dt>Where</dt><dd>Writes straight into Dentrix, Eaglesoft, and Open Dental through a bridge that runs inside the office.</dd></div>
+      </dl>
+      <a class="link-arrow" href="https://hermie.net" target="_blank" rel="noopener">Visit hermie.net<svg class="i" aria-hidden="true"><use href="/icons.svg#arrow-up-right"/></svg></a>
+    </div>
+  </section>
+
+  <section id="work" class="work wrap" aria-labelledby="work-title">
+    <h2 id="work-title" class="reveal">Other things I've built</h2>
+    <div class="bento">
+
+      <a class="tile tile-photo span-2 reveal" href="https://old.josiahjardine.com/blog" target="_blank" rel="noopener">
+        <div class="tile-media">
+          <img
+            src="https://framerusercontent.com/images/pVytkdbn5JW8HgmTm8qdaEFO0m8.jpg?scale-down-to=1024"
+            srcset="https://framerusercontent.com/images/pVytkdbn5JW8HgmTm8qdaEFO0m8.jpg?scale-down-to=1024 1024w,
+                    https://framerusercontent.com/images/pVytkdbn5JW8HgmTm8qdaEFO0m8.jpg?scale-down-to=2048 2048w"
+            sizes="(min-width: 900px) 760px, 100vw"
+            width="6000" height="4000" loading="lazy" decoding="async" alt="Josiah's BMW 635">
+        </div>
+        <div class="tile-body">
+          <h3>BMW 635 project <span class="year">2025</span></h3>
+          <p>My project car. Progress and notes live on the blog.</p>
+        </div>
+        <svg class="i tile-arrow" aria-hidden="true"><use href="/icons.svg#arrow-up-right"/></svg>
+      </a>
+
+      <a class="tile tile-accent reveal" href="https://marketingmeteor.com" target="_blank" rel="noopener">
+        <div class="tile-body">
+          <p class="tile-kicker">marketingmeteor.com</p>
+          <h3>Marketing Meteor</h3>
+          <p>Web design for small businesses that need a clean, fast site. It's how I learn business with very little risk.</p>
+        </div>
+        <svg class="i tile-arrow" aria-hidden="true"><use href="/icons.svg#arrow-up-right"/></svg>
+      </a>
+
+      <a class="tile tile-shot reveal" href="https://github.com/Jodad08/Outfit_thingy" target="_blank" rel="noopener">
+        <div class="tile-media">
+          <img src="/img/wardrobe.webp" width="1376" height="686" loading="lazy" decoding="async" alt="Wardrobe suggesting an outfit with a score breakdown for occasion, weather, color, comfort, preference, and rotation">
+        </div>
+        <div class="tile-body">
+          <h3>Wardrobe</h3>
+          <p>Photograph your closet and it builds outfits ranked by weather, occasion, color, and what you haven't worn lately. Fully self-hosted.</p>
+        </div>
+        <svg class="i tile-arrow" aria-hidden="true"><use href="/icons.svg#arrow-up-right"/></svg>
+      </a>
+
+      <a class="tile tile-shot span-2 reveal" href="https://github.com/Jodad08/campground-blacklist" target="_blank" rel="noopener">
+        <div class="tile-media">
+          <img src="/img/campground.webp" width="1720" height="650" loading="lazy" decoding="async" alt="Blacklist checker flagging 2 of 6 bookings, with fuzzy name matches and exact phone and email matches">
+        </div>
+        <div class="tile-body">
+          <h3>Campground blacklist checker</h3>
+          <p>Flags banned guests in a bookings CSV, even when the name is misspelled. Runs free on Cloudflare Workers.</p>
+        </div>
+        <svg class="i tile-arrow" aria-hidden="true"><use href="/icons.svg#arrow-up-right"/></svg>
+      </a>
+
+      <a class="tile tile-code span-2 reveal" href="https://github.com/Jodad08/Windows_Automater" target="_blank" rel="noopener">
+        <pre class="code" aria-label="Example request to the bridge API"><code><span class="c-mute">$</span> curl -X POST localhost:8765/apps/mock-1/calc/press \
+    -d '{"tokens":["1","2","x","1","2","="]}'
+<span class="c-mute"># -&gt;</span> {"session_id":"mock-1","display":"<span class="c-hi">144</span>"}</code></pre>
+        <div class="tile-body">
+          <h3>Legacy desktop bridge</h3>
+          <p>Wraps old Windows GUI automation in a clean JSON API. FastAPI in front, pywinauto underneath.</p>
+        </div>
+        <svg class="i tile-arrow" aria-hidden="true"><use href="/icons.svg#arrow-up-right"/></svg>
+      </a>
+
+      <a class="tile tile-mono reveal" href="https://github.com/Jodad08/wallpaper_watcher" target="_blank" rel="noopener">
+        <p class="prompt" aria-hidden="true">PS&gt;<span>_</span></p>
+        <div class="tile-body">
+          <p class="tile-kicker">Watch-Wallpaper.ps1</p>
+          <h3>Wallpaper watcher</h3>
+          <p>A tiny, no-admin Windows tool that puts your wallpaper back when something else changes it.</p>
+        </div>
+        <svg class="i tile-arrow" aria-hidden="true"><use href="/icons.svg#arrow-up-right"/></svg>
+      </a>
+
+    </div>
+    <p class="more reveal"><a class="link-arrow" href="https://github.com/Jodad08" target="_blank" rel="noopener">More on GitHub<svg class="i" aria-hidden="true"><use href="/icons.svg#arrow-up-right"/></svg></a></p>
+  </section>
+
+  <section id="writing" class="writing wrap" aria-labelledby="writing-title">
+    <h2 id="writing-title" class="reveal">Writing</h2>
+    <ol class="posts">
+      <li class="reveal">
+        <a href="https://old.josiahjardine.com/blog" target="_blank" rel="noopener">
+          <span class="post-year">2025</span>
+          <span class="post-title">Why Brutalism Is Awesome</span>
+          <span class="post-tag">Architecture</span>
+          <img class="peek" src="https://framerusercontent.com/images/q8Iv1d4mS9p7AOvBqvktzUEmHEs.jpeg?scale-down-to=512" width="1280" height="853" loading="lazy" decoding="async" alt="">
+        </a>
+      </li>
+      <li class="reveal">
+        <a href="https://old.josiahjardine.com/blog" target="_blank" rel="noopener">
+          <span class="post-year">2024</span>
+          <span class="post-title">Why being young shows that anything is possible</span>
+          <span class="post-tag">Essay</span>
+          <img class="peek" src="https://framerusercontent.com/images/c71zncQEYTTpWukdMMlTExdL0vg.jpg?scale-down-to=512" width="1200" height="677" loading="lazy" decoding="async" alt="">
+        </a>
+      </li>
+      <li class="reveal">
+        <a href="https://old.josiahjardine.com/blog" target="_blank" rel="noopener">
+          <span class="post-year">2024</span>
+          <span class="post-title">Notes on Stanford's entrepreneurial ecosystem</span>
+          <span class="post-tag">Notes</span>
+          <img class="peek" src="https://framerusercontent.com/images/qbLy8X597Wz86YIxU2ItPwCZG9A.jpg?scale-down-to=512" width="3768" height="2120" loading="lazy" decoding="async" alt="">
+        </a>
+      </li>
+    </ol>
+  </section>
+
+  <section id="about" class="skills wrap" aria-labelledby="about-title">
+    <h2 id="about-title" class="reveal">What I know</h2>
+    <div class="skill-grid">
+      <article class="skill reveal">
+        <svg class="i skill-icon" aria-hidden="true"><use href="/icons.svg#linux-logo"/></svg>
+        <h3>Linux</h3>
+        <p>My pride and joy. I don't really need it, but it taught me how computers work, how little I know, and how much I still have to learn. I run NixOS btw.</p>
+      </article>
+      <article class="skill reveal">
+        <svg class="i skill-icon" aria-hidden="true"><use href="/icons.svg#cube"/></svg>
+        <h3>Docker</h3>
+        <p>I was too cheap to pay for a Windows key, so I watched a ton of YouTube and learned Docker and networking. Now I have a solid base for security-minded, technical work.</p>
+      </article>
+      <article class="skill reveal">
+        <svg class="i skill-icon" aria-hidden="true"><use href="/icons.svg#faders"/></svg>
+        <h3>Audio engineering</h3>
+        <p>I mix audio for my school's theater. I also mix audio for my church.</p>
+      </article>
+      <article class="skill reveal">
+        <svg class="i skill-icon" aria-hidden="true"><use href="/icons.svg#browser"/></svg>
+        <h3>Web design</h3>
+        <p>I want to go to business school, or at least start companies. Selling web design to small businesses lets me build those skills with little risk.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="elsewhere wrap" aria-labelledby="elsewhere-title">
+    <h2 id="elsewhere-title" class="reveal">Photography and reading</h2>
+    <div class="elsewhere-grid">
+      <a class="shelf shelf-wide reveal" href="https://old.josiahjardine.com/photos" target="_blank" rel="noopener">
+        <div class="shelf-media">
+          <img
+            src="https://framerusercontent.com/images/Mr1UdgEuTHmHH6soTrhkYYPpwN4.jpg?scale-down-to=1024"
+            srcset="https://framerusercontent.com/images/Mr1UdgEuTHmHH6soTrhkYYPpwN4.jpg?scale-down-to=1024 1024w,
+                    https://framerusercontent.com/images/Mr1UdgEuTHmHH6soTrhkYYPpwN4.jpg?scale-down-to=2048 2048w"
+            sizes="(min-width: 900px) 680px, 100vw"
+            width="6000" height="4000" loading="lazy" decoding="async" alt="A photo by Josiah">
+        </div>
+        <p class="shelf-caption"><svg class="i" aria-hidden="true"><use href="/icons.svg#camera"/></svg>My photography<svg class="i shelf-arrow" aria-hidden="true"><use href="/icons.svg#arrow-right"/></svg></p>
+      </a>
+      <a class="shelf reveal" href="https://old.josiahjardine.com/reading-list" target="_blank" rel="noopener">
+        <div class="shelf-media">
+          <img
+            src="https://framerusercontent.com/images/egDY2mZzEe5dvlUcLKz4FUN1I.png?scale-down-to=1024"
+            width="1920" height="1080" loading="lazy" decoding="async" alt="Books Josiah has read">
+        </div>
+        <p class="shelf-caption"><svg class="i" aria-hidden="true"><use href="/icons.svg#book-open"/></svg>Reading list<svg class="i shelf-arrow" aria-hidden="true"><use href="/icons.svg#arrow-right"/></svg></p>
+      </a>
+    </div>
+  </section>
+
+  <section id="contact" class="contact wrap reveal" aria-labelledby="contact-title">
+    <h2 id="contact-title">Let's work together</h2>
+    <a class="email" href="mailto:josiah@josiahjardine.com">josiah@josiahjardine.com</a>
+    <div class="contact-row">
+      <a class="btn btn-primary" href="https://cal.com/josiahjardine/15min" target="_blank" rel="noopener">
+        <svg class="i" aria-hidden="true"><use href="/icons.svg#calendar-blank"/></svg>Book a call
+      </a>
+      <p class="hours"><span>Response hours</span> 4:00 AM - 5:00 PM PT</p>
+      <ul class="socials" aria-label="Elsewhere online">
+        <li><a href="https://x.com/josiahjardine" target="_blank" rel="noopener" aria-label="X"><svg class="i" aria-hidden="true"><use href="/icons.svg#x-logo"/></svg></a></li>
+        <li><a href="https://github.com/Jodad08" target="_blank" rel="noopener" aria-label="GitHub"><svg class="i" aria-hidden="true"><use href="/icons.svg#github-logo"/></svg></a></li>
+        <li><a href="https://www.pinterest.com/Josiahsinspiration" target="_blank" rel="noopener" aria-label="Pinterest"><svg class="i" aria-hidden="true"><use href="/icons.svg#pinterest-logo"/></svg></a></li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <p class="wordmark" aria-hidden="true">Josiah Jardine</p>
+    <div class="footer-row">
+      <p>&copy; <span data-year>2026</span> Josiah Jardine. Bay Area, California.</p>
+      <p><a href="https://old.josiahjardine.com" target="_blank" rel="noopener">The old site</a></p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

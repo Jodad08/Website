@@ -1,0 +1,13 @@
+// Cloudflare Workers static assets. `npm run deploy` publishes ./public.
+// No Worker script: every request is served straight from the asset store,
+// with /_headers applied and /404.html returned for unknown paths.
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "josiahjardine",
+  "compatibility_date": "2025-09-01",
+  "assets": {
+    "directory": "./public",
+    "not_found_handling": "404-page",
+    "html_handling": "auto-trailing-slash"
+  }
+}

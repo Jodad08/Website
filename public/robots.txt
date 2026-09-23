@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://josiahjardine.com/sitemap.xml
