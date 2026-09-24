@@ -35,6 +35,16 @@
     items.forEach(function (el) { el.classList.add('in'); });
   }
 
+  // Transparent nav while the hero photo is behind it.
+  var nav = document.querySelector('.nav');
+  var heroEnd = document.querySelector('.hero-end');
+  if (nav && heroEnd && 'IntersectionObserver' in window) {
+    new IntersectionObserver(function (entries) {
+      var e = entries[0];
+      nav.classList.toggle('over-hero', e.isIntersecting || e.boundingClientRect.top > nav.offsetHeight);
+    }, { rootMargin: '-64px 0px 0px 0px' }).observe(heroEnd);
+  }
+
   var year = document.querySelector('[data-year]');
   if (year) year.textContent = String(new Date().getFullYear());
 })();

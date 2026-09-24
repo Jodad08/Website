@@ -37,7 +37,7 @@ Both paths use the same `public/_headers` (security headers + caching) and `publ
 | `public/styles.css` | Tokens at the top (light + dark), then one block per section. |
 | `public/main.js` | Theme toggle, scroll reveals, footer year. |
 | `public/icons.svg` | Phosphor icon sprite (MIT). |
-| `public/fonts/` | Geist, Geist Mono, Geist Pixel (OFL, self-hosted). |
+| `public/fonts/` | Archivo (variable weight + width) and Geist Mono, both OFL, self-hosted. |
 | `public/img/` | Screenshots of Hermie, Wardrobe and the campground checker. |
 | `public/og.png` | 1200x630 social preview. |
 | `public/_headers` | CSP, HSTS, caching. |
