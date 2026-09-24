@@ -19,7 +19,8 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@josiahjardine">
 <meta name="twitter:image" content="https://josiahjardine.com/og.png">
-<link rel="icon" href="/favicon.png" type="image/png">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.png" type="image/png" sizes="64x64">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="preload" href="/fonts/archivo.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/styles.css">
@@ -32,8 +33,7 @@
 <header class="nav">
   <div class="wrap nav-inner">
     <a class="brand" href="/" aria-label="Josiah Jardine, home">
-      <span class="brand-mark" aria-hidden="true">JJ</span>
-      <span class="brand-name">Josiah Jardine</span>
+      <span class="brand-logo" aria-hidden="true"></span>
     </a>
     <nav aria-label="Primary">
       <ul class="nav-links">
@@ -58,7 +58,7 @@
     <div class="hero-inner">
       <div class="hero-copy">
         <h1 id="hero-title" class="tagline enter">Building things, loving life<span class="dot">.</span></h1>
-        <p class="lede enter">I'm Josiah. I build Hermie, automate the boring parts of software, and run NixOS btw.</p>
+        <p class="lede enter">I'm Josiah. I'm building Hermie: deterministic dental insurance verification, done before the front desk opens.</p>
         <div class="ctas enter">
           <a class="btn btn-primary" href="https://cal.com/josiahjardine/15min" target="_blank" rel="noopener">
             <svg class="i" aria-hidden="true"><use href="/icons.svg#calendar-blank"/></svg>Book a call
@@ -68,13 +68,14 @@
       </div>
       <div class="hero-now enter" aria-labelledby="hero-now-title">
         <h2 id="hero-now-title">Right now, I'm</h2>
+        <a class="now-feature" href="https://hermie.net" target="_blank" rel="noopener">
+          <span class="now-verb">Building</span>
+          <span class="now-title">Hermie<svg class="i" aria-hidden="true"><use href="/icons.svg#arrow-up-right"/></svg></span>
+          <span class="now-desc">Deterministic dental insurance verification, written straight into Dentrix, Eaglesoft, and Open Dental.</span>
+        </a>
         <dl class="now-list">
-          <div><dt>building</dt><dd><a href="https://hermie.net" target="_blank" rel="noopener">Hermie</a>, dental insurance verification that finishes before the front desk opens.</dd></div>
-          <div><dt>running</dt><dd><a href="https://marketingmeteor.com" target="_blank" rel="noopener">Marketing Meteor</a>, building websites for businesses that need them.</dd></div>
-          <div><dt>fixing</dt><dd>Computers, as onsite IT support for <a href="https://netfusionconsulting.com" target="_blank" rel="noopener">NetFusion Consulting</a>.</dd></div>
-          <div><dt>studying</dt><dd>At SFSU, class of 2030.</dd></div>
-          <div><dt>mixing</dt><dd>Audio for theater and for my church.</dd></div>
-          <div><dt>reading</dt><dd>Whatever is next on my <a href="https://old.josiahjardine.com/reading-list" target="_blank" rel="noopener">reading list</a>.</dd></div>
+          <div><dt>Running</dt><dd>Onsite infrastructure and PMS integration at <a href="https://netfusionconsulting.com" target="_blank" rel="noopener">NetFusion Consulting</a>.</dd></div>
+          <div><dt>Shipping</dt><dd>Small tools on the side, on Cloudflare Workers, FastAPI, and NixOS. <a href="#work">See the work</a>.</dd></div>
         </dl>
       </div>
     </div>
@@ -84,12 +85,9 @@
   <section class="now wrap reveal" aria-labelledby="now-title">
     <h2 id="now-title">Right now, I'm</h2>
     <dl class="now-list">
-      <div><dt>building</dt><dd><a href="https://hermie.net" target="_blank" rel="noopener">Hermie</a>, dental insurance verification that finishes before the front desk opens.</dd></div>
-      <div><dt>running</dt><dd><a href="https://marketingmeteor.com" target="_blank" rel="noopener">Marketing Meteor</a>, building websites for businesses that need them.</dd></div>
-      <div><dt>fixing</dt><dd>Computers, as onsite IT support for <a href="https://netfusionconsulting.com" target="_blank" rel="noopener">NetFusion Consulting</a>.</dd></div>
-      <div><dt>studying</dt><dd>At SFSU, class of 2030.</dd></div>
-      <div><dt>mixing</dt><dd>Audio for theater and for my church.</dd></div>
-      <div><dt>reading</dt><dd>Whatever is next on my <a href="https://old.josiahjardine.com/reading-list" target="_blank" rel="noopener">reading list</a>.</dd></div>
+      <div><dt>building</dt><dd><a href="https://hermie.net" target="_blank" rel="noopener">Hermie</a>, deterministic dental insurance verification, written straight into the practice's PMS.</dd></div>
+      <div><dt>running</dt><dd>Onsite infrastructure and PMS integration at <a href="https://netfusionconsulting.com" target="_blank" rel="noopener">NetFusion Consulting</a>.</dd></div>
+      <div><dt>shipping</dt><dd>Small tools on the side, on Cloudflare Workers, FastAPI, and NixOS. <a href="#work">See the work</a>.</dd></div>
     </dl>
   </section>
 
@@ -130,9 +128,9 @@
 
       <a class="tile tile-accent reveal" href="https://marketingmeteor.com" target="_blank" rel="noopener">
         <div class="tile-body">
-          <p class="tile-kicker">marketingmeteor.com</p>
+          <p class="tile-kicker">Past work</p>
           <h3>Marketing Meteor</h3>
-          <p>Web design for small businesses that need a clean, fast site. It's how I learn business with very little risk.</p>
+          <p>The web design studio I ran for small businesses. It's where I learned how a business actually runs.</p>
         </div>
         <svg class="i tile-arrow" aria-hidden="true"><use href="/icons.svg#arrow-up-right"/></svg>
       </a>
