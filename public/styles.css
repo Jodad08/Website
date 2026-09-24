@@ -236,17 +236,25 @@ h3 { font-size: 1.15rem; line-height: 1.25; font-weight: 800; letter-spacing: -0
   padding: 120px var(--gutter) clamp(16px, 2.4vw, 32px);
 }
 .hero-copy { max-width: 1180px; }
-.tagline {
-  max-width: 14ch;
-  font-size: clamp(2.6rem, 6vw, 5.5rem);
-  font-weight: 900;
-  line-height: 0.98;
-  letter-spacing: -0.035em;
-  text-wrap: balance;
+/* Round portrait next to the name. */
+.hero-id { display: flex; align-items: center; gap: clamp(20px, 2.4vw, 32px); }
+.avatar {
+  flex: none;
+  width: clamp(112px, 11vw, 168px);
+  height: auto;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 0 3px rgb(238 241 242 / 0.9), 0 0 0 9px rgb(143 176 138 / 0.35), 0 24px 50px -18px rgb(0 0 0 / 0.7);
 }
-.tagline .dot { color: var(--hero-accent); }
+.hero-id h1 {
+  font-size: clamp(2.4rem, 4.6vw, 4.4rem);
+  font-weight: 900;
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+}
 .lede {
-  margin-top: 18px;
+  margin-top: 26px;
   max-width: 36ch;
   font-size: clamp(1.05rem, 1.5vw, 1.25rem);
   line-height: 1.5;
@@ -591,7 +599,7 @@ h3 { font-size: 1.15rem; line-height: 1.25; font-weight: 800; letter-spacing: -0
 
 @media (prefers-reduced-motion: no-preference) {
   .js .enter { opacity: 0; transform: translateY(18px); animation: enter 0.9s var(--ease) forwards; }
-  .js .tagline.enter { animation-delay: 0.1s; }
+  .js .hero-id.enter { animation-delay: 0.1s; }
   .js .lede.enter { animation-delay: 0.2s; }
   .js .ctas.enter { animation-delay: 0.3s; }
   .js .hero-now.enter { animation-delay: 0.35s; }
@@ -626,6 +634,7 @@ h3 { font-size: 1.15rem; line-height: 1.25; font-weight: 800; letter-spacing: -0
   body { font-size: 16px; }
   .nav-inner { gap: 8px; height: 60px; }
   .hero { margin-top: -60px; min-height: 92svh; }
+  .hero-id { flex-direction: column; align-items: flex-start; gap: 18px; }
   .nav-links a { padding: 8px 9px; font-size: 14.5px; }
   .bento, .elsewhere-grid, .skill-grid { grid-template-columns: 1fr; }
   .span-2 { grid-column: auto; }
