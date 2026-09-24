@@ -44,6 +44,7 @@
   --font: "Archivo", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
   --mono: "Geist Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
   --hero-ink: #eef1f2;
+  --logo: url("/img/logo-black.png");
   --hero-accent: #8fb08a;
 
   --r: 7px;
@@ -68,6 +69,7 @@
     --shot-bg: #0e1310;
     --shadow: 0 1px 2px rgb(0 0 0 / 0.3), 0 12px 32px -12px rgb(0 0 0 / 0.6);
     --nav-bg: rgb(18 22 20 / 0.72);
+    --logo: url("/img/logo-white.png");
     color-scheme: dark;
   }
 }
@@ -84,6 +86,7 @@
   --shot-bg: #0e1310;
   --shadow: 0 1px 2px rgb(0 0 0 / 0.3), 0 12px 32px -12px rgb(0 0 0 / 0.6);
   --nav-bg: rgb(18 22 20 / 0.72);
+  --logo: url("/img/logo-white.png");
   color-scheme: dark;
 }
 
@@ -175,15 +178,14 @@ h3 { font-size: 1.15rem; line-height: 1.25; font-weight: 800; letter-spacing: -0
 @media (prefers-reduced-transparency: reduce) { .nav { background: var(--bg); backdrop-filter: none; } }
 .nav-inner { display: flex; align-items: center; gap: 24px; height: 64px; max-width: none; }
 .brand { display: inline-flex; align-items: center; gap: 12px; text-decoration: none; margin-right: auto; }
-.brand-mark {
-  display: grid; place-items: center;
-  width: 34px; height: 34px; border-radius: 4px;
-  background: var(--ink); color: var(--bg);
-  font: 700 17px/1 var(--font); font-stretch: 62%; letter-spacing: 0.01em;
-  transition: background-color 0.2s, color 0.2s;
+/* J monogram: black on light, white on dark and over the hero photo. */
+.brand-logo {
+  display: block;
+  width: 40px; height: 40px;
+  background: var(--logo) center / contain no-repeat;
+  transition: transform 0.4s var(--ease), opacity 0.2s;
 }
-.brand:hover .brand-mark { background: var(--accent); color: var(--on-accent); }
-.brand-name { font-weight: 800; letter-spacing: -0.02em; }
+.brand:hover .brand-logo { transform: translateY(-1px) rotate(-4deg); }
 .nav-links { display: flex; gap: 4px; }
 .nav-links a {
   display: block; padding: 8px 12px; border-radius: 8px;
@@ -286,19 +288,39 @@ h3 { font-size: 1.15rem; line-height: 1.25; font-weight: 800; letter-spacing: -0
 @media (prefers-reduced-transparency: reduce) {
   .hero-now { background: #161b18; backdrop-filter: none; }
 }
-.hero-now h2 { font-size: clamp(2.2rem, 3.2vw, 3rem); }
-.hero-now .now-list { margin-top: 18px; max-width: none; }
+.hero-now h2 { font-size: clamp(1.5rem, 2vw, 1.9rem); }
+.now-feature {
+  display: block;
+  margin-top: 18px;
+  padding-block: 18px 20px;
+  border-top: 1px solid rgb(238 241 242 / 0.16);
+  text-decoration: none;
+}
+.now-verb, .hero-now .now-list dt {
+  display: block;
+  font: 600 1.05rem/1 var(--font);
+  font-stretch: 62%;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--hero-accent);
+}
+.now-title {
+  display: flex; align-items: center; gap: 10px;
+  margin-top: 8px;
+  font-size: clamp(2.4rem, 3.6vw, 3.4rem);
+  font-weight: 900;
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+  color: var(--hero-ink);
+}
+.now-title .i { font-size: 0.5em; color: var(--hero-accent); transition: transform 0.4s var(--ease); }
+.now-feature:hover .now-title .i { transform: translate(3px, -3px); }
+.now-desc { display: block; margin-top: 10px; font-size: 15.5px; line-height: 1.45; color: rgb(238 241 242 / 0.9); }
+.hero-now .now-list { margin-top: 0; max-width: none; }
 .hero-now .now-list > div {
   display: block;
   padding-block: 13px;
   border-top-color: rgb(238 241 242 / 0.16);
-}
-.hero-now .now-list dt {
-  font: 600 1.2rem/1 var(--font);
-  font-stretch: 62%;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
-  color: var(--hero-accent);
 }
 .hero-now .now-list dd { margin-top: 5px; font-size: 15px; line-height: 1.45; color: rgb(238 241 242 / 0.9); }
 .hero-now .now-list a { color: var(--hero-ink); text-decoration-color: var(--hero-accent); }
@@ -308,8 +330,8 @@ h3 { font-size: 1.15rem; line-height: 1.25; font-weight: 800; letter-spacing: -0
 /* Nav sits transparent over the photo until the hero scrolls away (main.js). */
 .nav { transition: background-color 0.3s, border-color 0.3s; }
 .nav.over-hero { background: transparent; border-bottom-color: transparent; -webkit-backdrop-filter: none; backdrop-filter: none; }
-.nav.over-hero .brand-name, .nav.over-hero .theme-toggle { color: var(--hero-ink); }
-.nav.over-hero .brand-mark { background: var(--hero-ink); color: #161b18; }
+.nav.over-hero .theme-toggle { color: var(--hero-ink); }
+.nav.over-hero .brand-logo { background-image: url("/img/logo-white.png"); }
 .nav.over-hero .nav-links a { color: rgb(238 241 242 / 0.82); }
 .nav.over-hero .nav-links a:hover, .nav.over-hero .theme-toggle:hover { color: var(--hero-ink); background: rgb(238 241 242 / 0.14); }
 
@@ -593,7 +615,6 @@ h3 { font-size: 1.15rem; line-height: 1.25; font-weight: 800; letter-spacing: -0
 
 @media (max-width: 767px) {
   body { font-size: 16px; }
-  .brand-name { display: none; }
   .nav-inner { gap: 8px; height: 60px; }
   .hero { margin-top: -60px; min-height: 92svh; }
   .nav-links a { padding: 8px 9px; font-size: 14.5px; }
