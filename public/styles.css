@@ -265,74 +265,6 @@ h3 { font-size: 1.15rem; line-height: 1.25; font-weight: 800; letter-spacing: -0
 .hero .btn-primary:hover { background: var(--hero-accent); color: #101410; }
 .hero .btn-quiet { color: var(--hero-ink); border-color: rgb(238 241 242 / 0.5); }
 .hero .btn-quiet:hover { border-color: var(--hero-ink); background: rgb(238 241 242 / 0.08); }
-/* Desktop: headline block on the left, "Right now" as a tall frosted panel on
-   the right. Phones drop the panel and keep the standalone section below. */
-@media (min-width: 901px) {
-  .hero--now .hero-inner {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(340px, 440px);
-    align-items: center;
-    gap: clamp(40px, 6vw, 120px);
-    padding: 112px clamp(32px, 6vw, 112px) 72px;
-  }
-  .hero--now .hero-scrim {
-    background:
-      linear-gradient(to bottom, rgb(18 22 20 / 0.55) 0%, rgb(18 22 20 / 0) 16%),
-      linear-gradient(to right, rgb(18 22 20 / 0.78) 0%, rgb(18 22 20 / 0.45) 48%, rgb(18 22 20 / 0.2) 100%),
-      linear-gradient(to top, rgb(18 22 20 / 0.5) 0%, rgb(18 22 20 / 0) 30%);
-  }
-  .hero--now ~ .now { display: none; }
-}
-.hero-now {
-  display: flex; flex-direction: column;
-  padding: 28px 28px 12px;
-  border-radius: var(--r);
-  border: 1px solid rgb(238 241 242 / 0.16);
-  background: rgb(18 22 20 / 0.5);
-  -webkit-backdrop-filter: blur(18px) saturate(1.2);
-  backdrop-filter: blur(18px) saturate(1.2);
-  box-shadow: inset 0 1px 0 rgb(238 241 242 / 0.08), 0 24px 60px -24px rgb(0 0 0 / 0.6);
-}
-@media (prefers-reduced-transparency: reduce) {
-  .hero-now { background: #161b18; backdrop-filter: none; }
-}
-.hero-now h2 { font-size: clamp(1.5rem, 2vw, 1.9rem); }
-.now-feature {
-  display: block;
-  margin-top: 18px;
-  padding-block: 18px 20px;
-  border-top: 1px solid rgb(238 241 242 / 0.16);
-  text-decoration: none;
-}
-.now-verb, .hero-now .now-list dt {
-  display: block;
-  font: 600 1.05rem/1 var(--font);
-  font-stretch: 62%;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: var(--hero-accent);
-}
-.now-title {
-  display: flex; align-items: center; gap: 10px;
-  margin-top: 8px;
-  font-size: clamp(2.4rem, 3.6vw, 3.4rem);
-  font-weight: 900;
-  line-height: 0.95;
-  letter-spacing: -0.04em;
-  color: var(--hero-ink);
-}
-.now-title .i { font-size: 0.5em; color: var(--hero-accent); transition: transform 0.4s var(--ease); }
-.now-feature:hover .now-title .i { transform: translate(3px, -3px); }
-.now-desc { display: block; margin-top: 10px; font-size: 15.5px; line-height: 1.45; color: rgb(238 241 242 / 0.9); }
-.hero-now .now-list { margin-top: 0; max-width: none; }
-.hero-now .now-list > div {
-  display: block;
-  padding-block: 13px;
-  border-top-color: rgb(238 241 242 / 0.16);
-}
-.hero-now .now-list dd { margin-top: 5px; font-size: 15px; line-height: 1.45; color: rgb(238 241 242 / 0.9); }
-.hero-now .now-list a { color: var(--hero-ink); text-decoration-color: var(--hero-accent); }
-.hero-now .now-list a:hover { color: var(--hero-accent); }
 .hero-end { position: absolute; bottom: 0; left: 0; width: 1px; height: 1px; }
 
 /* Nav sits transparent over the photo until the hero scrolls away (main.js). */
@@ -602,7 +534,6 @@ h3 { font-size: 1.15rem; line-height: 1.25; font-weight: 800; letter-spacing: -0
   .js .hero-id.enter { animation-delay: 0.1s; }
   .js .lede.enter { animation-delay: 0.2s; }
   .js .ctas.enter { animation-delay: 0.3s; }
-  .js .hero-now.enter { animation-delay: 0.35s; }
   .js .hero-bg { animation: settle 1.8s var(--ease) both; }
 
   .js .reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.8s var(--ease), transform 0.8s var(--ease); }
@@ -623,7 +554,6 @@ h3 { font-size: 1.15rem; line-height: 1.25; font-weight: 800; letter-spacing: -0
 /* ---------- responsive ---------- */
 
 @media (max-width: 900px) {
-  .hero-now { display: none; }
   .feature { grid-template-columns: 1fr; }
   .bento { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .tile-accent, .tile-mono { min-height: 240px; }
