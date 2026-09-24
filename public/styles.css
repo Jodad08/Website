@@ -590,3 +590,43 @@ h3 { font-size: 1.15rem; line-height: 1.25; font-weight: 800; letter-spacing: -0
 .notfound p { color: var(--muted); max-width: 44ch; }
 .notfound p a { color: var(--ink); text-underline-offset: 3px; }
 .notfound .btn { margin-top: 12px; }
+
+/* ---------- posts (/writing/*, /projects/*) ---------- */
+
+/* One reading column, no chrome: title, a meta line, then text. */
+.post { max-width: 680px; margin-inline: auto; padding: clamp(40px, 7vw, 88px) var(--gutter) var(--section); }
+.post-back {
+  display: inline-flex; align-items: center; gap: 8px;
+  font: 500 13px/1 var(--mono); color: var(--muted); text-decoration: none;
+}
+.post-back .i { transform: rotate(180deg); transition: transform 0.4s var(--ease); }
+.post-back:hover { color: var(--accent); }
+.post-back:hover .i { transform: rotate(180deg) translateX(3px); }
+.post h1 {
+  margin-top: 28px;
+  font-size: clamp(2.2rem, 5.4vw, 3.4rem);
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  text-wrap: balance;
+}
+.post-meta { margin-top: 16px; font: 500 13px/1.4 var(--mono); color: var(--muted); }
+.post-meta span + span::before { content: "/"; margin: 0 10px; color: var(--line); }
+.post-body { margin-top: 40px; padding-top: 32px; border-top: 1px solid var(--line); font-size: 18px; line-height: 1.75; }
+.post-body > * + * { margin-top: 1.1em; }
+.post-body h2 { margin-top: 1.8em; font-size: clamp(1.7rem, 3.4vw, 2.2rem); }
+.post-body a { color: var(--ink); text-decoration-color: var(--accent); text-underline-offset: 3px; text-decoration-thickness: 1.5px; }
+.post-body a:hover { color: var(--accent); }
+.post-body ul { padding-left: 1.2em; list-style: disc; }
+.post-body li + li { margin-top: 0.4em; }
+.post-body blockquote { margin-inline: 0; padding-left: 20px; border-left: 3px solid var(--accent); color: var(--muted); }
+.post-log { list-style: none !important; padding: 0 !important; }
+.post-log li { display: grid; grid-template-columns: 110px minmax(0, 1fr); gap: 16px; padding-block: 12px; border-top: 1px solid var(--line); }
+.post-log li + li { margin-top: 0; }
+.post-log time { font: 500 13px/1.9 var(--mono); color: var(--accent); }
+.post-foot { margin-top: 56px; padding-top: 24px; border-top: 1px solid var(--line); font-size: 15px; color: var(--muted); }
+.post-foot a { color: var(--ink); text-underline-offset: 3px; }
+@media (max-width: 767px) {
+  .post-body { font-size: 17px; }
+  .post-log li { grid-template-columns: 1fr; gap: 2px; }
+}
