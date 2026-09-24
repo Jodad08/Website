@@ -423,11 +423,20 @@ h3 { font-size: 1.15rem; line-height: 1.25; font-weight: 800; letter-spacing: -0
 .tile-shot .tile-media { flex: 1; min-height: 220px; background: var(--shot-bg); padding: 16px 16px 0; }
 .tile-shot .tile-media img { border-radius: 4px 4px 0 0; object-fit: cover; object-position: top left; }
 
-.tile-accent { background: var(--accent); border-color: transparent; justify-content: flex-end; min-height: 280px; }
+/* Marketing Meteor in its own brand colors: near-black with electric blue. */
+.tile-accent {
+  justify-content: flex-end;
+  min-height: 280px;
+  border-color: rgb(255 255 255 / 0.08);
+  background:
+    radial-gradient(120% 90% at 100% 0%, rgb(0 85 255 / 0.55) 0%, rgb(0 85 255 / 0.12) 45%, transparent 70%),
+    #080808;
+}
+.tile-accent:hover { border-color: rgb(0 85 255 / 0.5); }
 .tile-accent .tile-body { padding: 26px; }
-.tile-accent h3 { font-size: 2rem; font-weight: 900; letter-spacing: -0.035em; color: var(--on-accent); }
-.tile-accent .tile-body p { color: var(--on-accent); opacity: 0.88; }
-.tile-accent .tile-kicker { color: var(--on-accent); opacity: 0.8; }
+.tile-accent h3 { font-size: 2rem; font-weight: 900; letter-spacing: -0.035em; color: #ffffff; }
+.tile-accent .tile-body p { color: rgb(255 255 255 / 0.66); }
+.tile-accent .tile-body .tile-kicker { color: #0099ff; }
 
 .tile-code { background: var(--code-bg); border-color: transparent; }
 .tile-code .code {
