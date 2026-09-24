@@ -52,17 +52,12 @@
 
 <main id="main">
 
-  <section class="hero" aria-labelledby="hero-title">
-    <img class="hero-bg"
-      src="https://framerusercontent.com/images/LJHKETUQYsVhrA7YO5cSZLrSLM.jpeg?scale-down-to=1024"
-      srcset="https://framerusercontent.com/images/LJHKETUQYsVhrA7YO5cSZLrSLM.jpeg?scale-down-to=1024 1024w,
-              https://framerusercontent.com/images/LJHKETUQYsVhrA7YO5cSZLrSLM.jpeg 2160w"
-      sizes="100vw"
-      width="2160" height="1440" alt="" fetchpriority="high">
+  <section class="hero hero--now" aria-labelledby="hero-title">
+    <img class="hero-bg" src="/img/hero.webp" width="1080" height="717" alt="The Barbican Estate in London at dusk, planted balconies above a garden" fetchpriority="high">
     <div class="hero-scrim" aria-hidden="true"></div>
     <div class="hero-inner">
       <div class="hero-copy">
-        <p class="tagline enter">Building things, loving life<span class="dot">.</span></p>
+        <h1 id="hero-title" class="tagline enter">Building things, loving life<span class="dot">.</span></h1>
         <p class="lede enter">I'm Josiah. I build Hermie, automate the boring parts of software, and run NixOS btw.</p>
         <div class="ctas enter">
           <a class="btn btn-primary" href="https://cal.com/josiahjardine/15min" target="_blank" rel="noopener">
@@ -71,7 +66,17 @@
           <a class="btn btn-quiet" href="#work">See my work</a>
         </div>
       </div>
-      <h1 id="hero-title" class="hero-name enter">Josiah Jardine</h1>
+      <div class="hero-now enter" aria-labelledby="hero-now-title">
+        <h2 id="hero-now-title">Right now, I'm</h2>
+        <dl class="now-list">
+          <div><dt>building</dt><dd><a href="https://hermie.net" target="_blank" rel="noopener">Hermie</a>, dental insurance verification that finishes before the front desk opens.</dd></div>
+          <div><dt>running</dt><dd><a href="https://marketingmeteor.com" target="_blank" rel="noopener">Marketing Meteor</a>, building websites for businesses that need them.</dd></div>
+          <div><dt>fixing</dt><dd>Computers, as onsite IT support for <a href="https://netfusionconsulting.com" target="_blank" rel="noopener">NetFusion Consulting</a>.</dd></div>
+          <div><dt>studying</dt><dd>At SFSU, class of 2030.</dd></div>
+          <div><dt>mixing</dt><dd>Audio for theater and for my church.</dd></div>
+          <div><dt>reading</dt><dd>Whatever is next on my <a href="https://old.josiahjardine.com/reading-list" target="_blank" rel="noopener">reading list</a>.</dd></div>
+        </dl>
+      </div>
     </div>
     <span class="hero-end" aria-hidden="true"></span>
   </section>
