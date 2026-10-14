@@ -350,7 +350,7 @@ h3 { font-size: 1.15rem; line-height: 1.25; font-weight: 800; letter-spacing: -0
    stretches over the whole tile; the GitHub link sits above it. */
 .tile-feature { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr); align-items: stretch; }
 .tile-feature .tile-media { background: #fbfaf6; }
-.tile-feature .tile-media img { height: 100%; object-fit: cover; object-position: center top; }
+.tile-feature .tile-media img { height: 100%; object-fit: cover; object-position: left top; }
 .tile-feature .tile-body { align-self: center; padding: 28px 30px; }
 .tile-feature h3 { font-size: 2rem; font-weight: 900; letter-spacing: -0.035em; }
 .tile-feature .tile-kicker { color: var(--accent); }
