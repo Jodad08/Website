@@ -349,8 +349,8 @@ h3 { font-size: 1.15rem; line-height: 1.25; font-weight: 800; letter-spacing: -0
 /* Full-width featured tile: screenshot left, text right. The title link
    stretches over the whole tile; the GitHub link sits above it. */
 .tile-feature { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr); align-items: stretch; }
-.tile-feature .tile-media { background: var(--shot-bg); padding: 20px 0 0 20px; }
-.tile-feature .tile-media img { height: 100%; border-radius: 6px 0 0 0; object-fit: cover; object-position: top left; }
+.tile-feature .tile-media { background: #fbfaf6; }
+.tile-feature .tile-media img { height: 100%; object-fit: cover; object-position: center top; }
 .tile-feature .tile-body { align-self: center; padding: 28px 30px; }
 .tile-feature h3 { font-size: 2rem; font-weight: 900; letter-spacing: -0.035em; }
 .tile-feature .tile-kicker { color: var(--accent); }
@@ -588,8 +588,6 @@ h3 { font-size: 1.15rem; line-height: 1.25; font-weight: 800; letter-spacing: -0
   .bento, .elsewhere-grid, .skill-grid { grid-template-columns: 1fr; }
   .span-2, .span-3 { grid-column: auto; }
   .tile-feature { grid-template-columns: 1fr; }
-  .tile-feature .tile-media { padding: 14px 14px 0; }
-  .tile-feature .tile-media img { border-radius: 6px 6px 0 0; }
   .now-list > div { grid-template-columns: 1fr; gap: 2px; padding-block: 16px; }
   .posts a { grid-template-columns: 1fr; gap: 8px; padding-block: 22px; }
   .post-tag { display: none; }
