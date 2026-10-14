@@ -354,6 +354,8 @@ h3 { font-size: 1.15rem; line-height: 1.25; font-weight: 800; letter-spacing: -0
 .tile-feature .tile-body { align-self: center; padding: 28px 30px; }
 .tile-feature h3 { font-size: 2rem; font-weight: 900; letter-spacing: -0.035em; }
 .tile-feature .tile-kicker { color: var(--accent); }
+.tile-award { display: inline-flex; align-items: center; gap: 7px; }
+.tile-award .i { font-size: 16px; }
 .tile-link { color: inherit; text-decoration: none; }
 .tile-link::after { content: ""; position: absolute; inset: 0; z-index: 1; }
 .tile-links { display: flex; gap: 20px; margin-top: 18px !important; }
