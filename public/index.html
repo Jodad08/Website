@@ -23,7 +23,7 @@
 <link rel="icon" href="/favicon.png" type="image/png" sizes="64x64">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="preload" href="/fonts/archivo.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/styles.css?v=e4ebc554a2">
+<link rel="stylesheet" href="/styles.css?v=b8f71dfa9b">
 <script>(function(){var d=document.documentElement;d.classList.add('js');try{var t=localStorage.getItem('theme');if(t==='light'||t==='dark')d.setAttribute('data-theme',t)}catch(e){}})();</script>
 <script src="/main.js?v=6a1fbaa521" defer></script>
 </head>
@@ -122,6 +122,20 @@
         <svg class="i tile-arrow" aria-hidden="true"><use href="/icons.svg#arrow-up-right"/></svg>
       </a>
 
+      <div class="tile tile-feature tile-feature--flip span-3 reveal">
+        <div class="tile-media">
+          <img src="/img/quintet-sm.webp" srcset="/img/quintet-sm.webp 900w, /img/quintet.webp 1600w" sizes="(min-width: 900px) 720px, 100vw" width="1600" height="895" loading="lazy" decoding="async" alt="The Quintet homepage: Your AI finance team. Every payment double-checked.">
+        </div>
+        <div class="tile-body">
+          <p class="tile-kicker">Cal Hacks 13.0 team build</p>
+          <h3><a class="tile-link" href="https://quintet.marketingmeteor.workers.dev" target="_blank" rel="noopener">Quintet</a></h3>
+          <p>An AI finance team for small businesses. Five seats check every invoice, bank change and receipt before money moves, and if a vendor "switched banks," it calls the vendor on file first. Built with Diego Rosen and Kai.</p>
+          <p class="tile-links">
+            <a class="link-arrow" href="https://quintet.marketingmeteor.workers.dev" target="_blank" rel="noopener">Open Quintet<svg class="i" aria-hidden="true"><use href="/icons.svg#arrow-up-right"/></svg></a>
+            <a class="link-arrow" href="https://github.com/diegosr-byte/quintet" target="_blank" rel="noopener">GitHub<svg class="i" aria-hidden="true"><use href="/icons.svg#arrow-up-right"/></svg></a>
+          </p>
+        </div>
+      </div>
       <div class="tile tile-feature span-3 reveal">
         <div class="tile-media">
           <img src="/img/planed-sm.webp" srcset="/img/planed-sm.webp 900w, /img/planed.webp 1600w" sizes="(min-width: 900px) 720px, 100vw" width="1600" height="1000" loading="lazy" decoding="async" alt="PlanEd's degree board: semesters of color-coded course cards, each checked for prerequisites">
@@ -137,17 +151,6 @@
         </div>
       </div>
 
-      <a class="tile tile-shot reveal" href="https://github.com/Jodad08/Outfit_thingy" target="_blank" rel="noopener">
-        <div class="tile-media">
-          <img src="/img/wardrobe.webp" width="1376" height="686" loading="lazy" decoding="async" alt="Wardrobe suggesting an outfit with a score breakdown for occasion, weather, color, comfort, preference, and rotation">
-        </div>
-        <div class="tile-body">
-          <h3>Wardrobe</h3>
-          <p>Photograph your closet and it builds outfits ranked by weather, occasion, color, and what you haven't worn lately. Fully self-hosted.</p>
-        </div>
-        <svg class="i tile-arrow" aria-hidden="true"><use href="/icons.svg#arrow-up-right"/></svg>
-      </a>
-
       <a class="tile tile-shot span-2 reveal" href="https://github.com/Jodad08/campground-blacklist" target="_blank" rel="noopener">
         <div class="tile-media">
           <img src="/img/campground.webp" width="1720" height="650" loading="lazy" decoding="async" alt="Blacklist checker flagging 2 of 6 bookings, with fuzzy name matches and exact phone and email matches">
@@ -159,23 +162,13 @@
         <svg class="i tile-arrow" aria-hidden="true"><use href="/icons.svg#arrow-up-right"/></svg>
       </a>
 
-      <a class="tile tile-code span-2 reveal" href="https://github.com/Jodad08/Windows_Automater" target="_blank" rel="noopener">
-        <pre class="code" aria-label="Example request to the bridge API"><code><span class="c-mute">$</span> curl -X POST localhost:8765/apps/mock-1/calc/press \
-    -d '{"tokens":["1","2","x","1","2","="]}'
-<span class="c-mute"># -&gt;</span> {"session_id":"mock-1","display":"<span class="c-hi">144</span>"}</code></pre>
+      <a class="tile tile-code reveal" href="https://github.com/Jodad08/Windows_Automater" target="_blank" rel="noopener">
+        <pre class="code" aria-label="Example request to the bridge API"><code><span class="c-mute">POST</span> /apps/mock-1/calc/press
+{"tokens":["1","2","x","1","2","="]}
+<span class="c-mute">-&gt;</span> {"display":"<span class="c-hi">144</span>"}</code></pre>
         <div class="tile-body">
           <h3>Legacy desktop bridge</h3>
           <p>Wraps old Windows GUI automation in a clean JSON API. FastAPI in front, pywinauto underneath.</p>
-        </div>
-        <svg class="i tile-arrow" aria-hidden="true"><use href="/icons.svg#arrow-up-right"/></svg>
-      </a>
-
-      <a class="tile tile-mono reveal" href="https://github.com/Jodad08/wallpaper_watcher" target="_blank" rel="noopener">
-        <p class="prompt" aria-hidden="true">PS&gt;<span>_</span></p>
-        <div class="tile-body">
-          <p class="tile-kicker">Watch-Wallpaper.ps1</p>
-          <h3>Wallpaper watcher</h3>
-          <p>A tiny, no-admin Windows tool that puts your wallpaper back when something else changes it.</p>
         </div>
         <svg class="i tile-arrow" aria-hidden="true"><use href="/icons.svg#arrow-up-right"/></svg>
       </a>
