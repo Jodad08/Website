@@ -45,6 +45,10 @@
     }, { rootMargin: '-64px 0px 0px 0px' }).observe(heroEnd);
   }
 
+  // Resume page: print to PDF.
+  var printBtn = document.querySelector('[data-print]');
+  if (printBtn) printBtn.addEventListener('click', function () { window.print(); });
+
   var year = document.querySelector('[data-year]');
   if (year) year.textContent = String(new Date().getFullYear());
 })();
