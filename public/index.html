@@ -23,7 +23,7 @@
 <link rel="icon" href="/favicon.png" type="image/png" sizes="64x64">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="preload" href="/fonts/archivo.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/styles.css?v=ec8ac28f96">
+<link rel="stylesheet" href="/styles.css?v=e6035df99f">
 <script>(function(){var d=document.documentElement;d.classList.add('js');try{var t=localStorage.getItem('theme');if(t==='light'||t==='dark')d.setAttribute('data-theme',t)}catch(e){}})();</script>
 <script src="/main.js?v=e974752efe" defer></script>
 </head>
@@ -78,7 +78,7 @@
     <h2 id="now-title">Right now, I'm</h2>
     <dl class="now-list">
       <div><dt>building</dt><dd><a href="https://hermie.net" target="_blank" rel="noopener">Hermie</a>. A first pilot practice runs it every week with zero staff involvement.</dd></div>
-      <div><dt>running</dt><dd><a href="https://marketingmeteor.com" target="_blank" rel="noopener">Marketing Meteor</a>, my studio for local businesses. Three clients, with a campground booking system up next.</dd></div>
+      <div><dt>running</dt><dd><a href="https://marketingmeteor.com" target="_blank" rel="noopener">Marketing Meteor</a>, my studio for local businesses. Three clients, and a campground booking system that goes live in November.</dd></div>
       <div><dt>supporting</dt><dd>Dental practices as an onsite technician at <a href="https://netfusionconsulting.com" target="_blank" rel="noopener">NetFusion Consulting</a>. Promoted from intern after four months.</dd></div>
       <div><dt>studying</dt><dd>Business Information Systems at SF State, with a minor in Computer Science. Class of 2030.</dd></div>
       <div><dt>looking for</dt><dd>Summer 2027 internships in project management, product or IT. <a href="mailto:josiah@josiahjardine.com">Email me</a>.</dd></div>
@@ -116,14 +116,16 @@
         <svg class="i tile-arrow" aria-hidden="true"><use href="/icons.svg#arrow-up-right"/></svg>
       </a>
 
-      <a class="tile tile-accent reveal" href="https://marketingmeteor.com" target="_blank" rel="noopener">
+      <div class="tile tile-accent reveal">
         <div class="tile-body">
           <p class="tile-kicker">Founder, 3 clients</p>
-          <h3>Marketing Meteor</h3>
-          <p>I run every client project end to end: sales, scoping, build and hosting. Next up is a booking system with live availability and Stripe payments for a campground.</p>
+          <h3><a class="tile-link" href="https://marketingmeteor.com" target="_blank" rel="noopener">Marketing Meteor</a></h3>
+          <p>I run every client project end to end: sales, scoping, build and hosting. A booking system with live availability and Stripe payments is built for a campground client and goes live in November.</p>
+          <p class="tile-links">
+            <a class="link-arrow" href="https://riverrest.marketingmeteor.com" target="_blank" rel="noopener">River Rest Resort<svg class="i" aria-hidden="true"><use href="/icons.svg#arrow-up-right"/></svg></a>
+          </p>
         </div>
-        <svg class="i tile-arrow" aria-hidden="true"><use href="/icons.svg#arrow-up-right"/></svg>
-      </a>
+      </div>
 
       <div class="tile tile-feature tile-feature--flip span-3 reveal">
         <div class="tile-media">
@@ -153,28 +155,6 @@
           </p>
         </div>
       </div>
-
-      <a class="tile tile-shot span-2 reveal" href="https://github.com/Jodad08/campground-blacklist" target="_blank" rel="noopener">
-        <div class="tile-media">
-          <img src="/img/campground.webp" width="1720" height="650" loading="lazy" decoding="async" alt="Blacklist checker flagging 2 of 6 bookings, with fuzzy name matches and exact phone and email matches">
-        </div>
-        <div class="tile-body">
-          <h3>Campground blacklist checker</h3>
-          <p>Flags banned guests in a bookings CSV, even when the name is misspelled. Runs free on Cloudflare Workers.</p>
-        </div>
-        <svg class="i tile-arrow" aria-hidden="true"><use href="/icons.svg#arrow-up-right"/></svg>
-      </a>
-
-      <a class="tile tile-code reveal" href="https://github.com/Jodad08/Windows_Automater" target="_blank" rel="noopener">
-        <pre class="code" aria-label="Example request to the bridge API"><code><span class="c-mute">POST</span> /apps/mock-1/calc/press
-{"tokens":["1","2","x","1","2","="]}
-<span class="c-mute">-&gt;</span> {"display":"<span class="c-hi">144</span>"}</code></pre>
-        <div class="tile-body">
-          <h3>Legacy desktop bridge</h3>
-          <p>Wraps old Windows GUI automation in a clean JSON API. FastAPI in front, pywinauto underneath.</p>
-        </div>
-        <svg class="i tile-arrow" aria-hidden="true"><use href="/icons.svg#arrow-up-right"/></svg>
-      </a>
 
     </div>
     <p class="more reveal"><a class="link-arrow" href="https://github.com/Jodad08" target="_blank" rel="noopener">More on GitHub<svg class="i" aria-hidden="true"><use href="/icons.svg#arrow-up-right"/></svg></a></p>

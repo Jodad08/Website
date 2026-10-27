@@ -32,12 +32,6 @@
   --line: #cfd6da;
   --accent: #3d6a43;
   --on-accent: #f2f5f1;
-  --code-bg: #1b241f;
-  --code-ink: #e3e8e6;
-  --code-mute: #8a9a94;
-  --code-hi: #8fb08a;
-  --code-body: #9aa6a8;
-  --shot-bg: #1b241f;
   --shadow: 0 1px 2px rgb(22 27 24 / 0.06), 0 12px 32px -12px rgb(40 55 60 / 0.22);
   --nav-bg: rgb(233 237 239 / 0.78);
 
@@ -65,8 +59,6 @@
     --line: #2c3430;
     --accent: #8fb08a;
     --on-accent: #101410;
-    --code-bg: #0e1310;
-    --shot-bg: #0e1310;
     --shadow: 0 1px 2px rgb(0 0 0 / 0.3), 0 12px 32px -12px rgb(0 0 0 / 0.6);
     --nav-bg: rgb(18 22 20 / 0.72);
     --logo: url("/img/logo-white.png");
@@ -82,8 +74,6 @@
   --line: #2c3430;
   --accent: #8fb08a;
   --on-accent: #101410;
-  --code-bg: #0e1310;
-  --shot-bg: #0e1310;
   --shadow: 0 1px 2px rgb(0 0 0 / 0.3), 0 12px 32px -12px rgb(0 0 0 / 0.6);
   --nav-bg: rgb(18 22 20 / 0.72);
   --logo: url("/img/logo-white.png");
@@ -384,8 +374,6 @@ h3 { font-size: 1.15rem; line-height: 1.25; font-weight: 800; letter-spacing: -0
 .tile:hover .tile-arrow, .tile:focus-visible .tile-arrow { opacity: 1; transform: none; }
 
 .tile-photo .tile-media { aspect-ratio: 16 / 9; }
-.tile-shot .tile-media { flex: 1; min-height: 220px; background: var(--shot-bg); padding: 16px 16px 0; }
-.tile-shot .tile-media img { border-radius: 4px 4px 0 0; object-fit: cover; object-position: top left; }
 
 /* Marketing Meteor in its own brand colors: near-black with electric blue. */
 .tile-accent {
@@ -401,20 +389,10 @@ h3 { font-size: 1.15rem; line-height: 1.25; font-weight: 800; letter-spacing: -0
 .tile-accent h3 { font-size: 2rem; font-weight: 900; letter-spacing: -0.035em; color: #ffffff; }
 .tile-accent .tile-body p { color: rgb(255 255 255 / 0.66); }
 .tile-accent .tile-body .tile-kicker { color: #0099ff; }
+.tile-accent h3 .tile-link { color: #ffffff; }
+.tile-accent .tile-links .link-arrow { color: #ffffff; border-color: rgb(255 255 255 / 0.3); }
+.tile-accent .tile-links .link-arrow:hover { color: #0099ff; border-color: currentColor; }
 
-.tile-code { background: var(--code-bg); border-color: transparent; }
-.tile-code .code {
-  flex: 1;
-  padding: 26px 24px 8px;
-  font: 400 13.5px/1.75 var(--mono);
-  color: var(--code-ink);
-  white-space: pre-wrap;
-  word-break: break-word;
-}
-.c-mute { color: var(--code-mute); }
-.c-hi { color: var(--code-hi); }
-.tile-code h3 { color: var(--code-ink); }
-.tile-code .tile-body p { color: var(--code-body); }
 
 .more { margin-top: 28px; }
 
@@ -557,7 +535,7 @@ h3 { font-size: 1.15rem; line-height: 1.25; font-weight: 800; letter-spacing: -0
   .feature { grid-template-columns: 1fr; }
   .bento { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .span-3 { grid-column: 1 / -1; }
-  .tile-accent, .tile-code { grid-column: 1 / -1; }
+  .tile-accent { grid-column: 1 / -1; }
   .tile-accent { min-height: 240px; }
   .peek { display: none; }
 }
